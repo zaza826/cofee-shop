@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caramelia Pastry - Coffee Shop in Oran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --caramel: #C17A4A;
+            --cream: #F5F1E8;
+            --charcoal: #3D3D3D;
+            --gold: #D4A574;
+            --sage: #A8B8A3;
+            --light-gray: #F9F7F3;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--charcoal);
+            background-color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--caramel);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--caramel);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--caramel) 0%, #B8683D 100%);
+            color: white;
+            padding: 6rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Lora', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .cta-primary {
+            display: inline-block;
+            background: white;
+            color: var(--caramel);
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Highlights Section */
+        .highlights {
+            padding: 4rem 3rem;
+            background: var(--cream);
+        }
+
+        .section-title {
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--charcoal);
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 4px solid var(--caramel);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .highlight-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-card h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--caramel);
+        }
+
+        .highlight-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Offerings Section */
+        .offerings {
+            padding: 4rem 3rem;
+            background: white;
+        }
+
+        .offerings-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .offerings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .offering-item {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            border-left: 4px solid var(--sage);
+        }
+
+        .offering-item h4 {
+            color: var(--charcoal);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Info Grid */
+        .info-section {
+            padding: 4rem 3rem;
+            background: var(--light-gray);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .info-card h3 {
+            font-family: 'Lora', serif;
+            color: var(--caramel);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--sage);
+            padding-bottom: 0.5rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-card li {
+            padding: 0.4rem 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .info-card li:before {
+            content: "✓ ";
+            color: var(--sage);
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        /* Atmosphere Section */
+        .atmosphere {
+            padding: 4rem 3rem;
+            background: white;
+        }
+
+        .atmosphere-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .tag {
+            background: var(--caramel);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Location Section */
+        .location {
+            padding: 4rem 3rem;
+            background: var(--cream);
+        }
+
+        .location-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .location-info h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .location-info p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .location-map {
+            background: #e0e0e0;
+            border-radius: 8px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 2rem 3rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--gold);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding: 3rem 1.5rem;
+            }
+
+            .highlights,
+            .offerings,
+            .info-section,
+            .atmosphere,
+            .location {
+                padding: 2rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .highlights-grid,
+            .offerings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Caramelia</div>
+        <ul>
+            <li><a href="#highlights">Why Us</a></li>
+            <li><a href="#offerings">Menu</a></li>
+            <li><a href="#info">Details</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Caramelia Pastry</h1>
+            <p>Artisan coffee & pastries in the heart of Oran</p>
+            <button class="cta-primary">Find Us</button>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights" id="highlights">
+        <h2 class="section-title">What Makes Us Special</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <div class="highlight-icon">☕</div>
+                <h3>Great Coffee</h3>
+                <p>Expertly sourced beans roasted to perfection</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🥐</div>
+                <h3>Great Dessert</h3>
+                <p>Freshly baked pastries and treats daily</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🍵</div>
+                <h3>Tea Selection</h3>
+                <p>Curated collection of premium loose-leaf teas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section class="offerings" id="offerings">
+        <div class="offerings-content">
+            <h2 class="section-title">What We Serve</h2>
+            <div class="offerings-grid">
+                <div class="offering-item">
+                    <h4>☕ Coffee</h4>
+                    <p>Our specialty & pride</p>
+                </div>
+                <div class="offering-item">
+                    <h4>🥐 Pastries</h4>
+                    <p>Handcrafted daily</p>
+                </div>
+                <div class="offering-item">
+                    <h4>🥞 Breakfast</h4>
+                    <p>Start your day right</p>
+                </div>
+                <div class="offering-item">
+                    <h4>🍳 Brunch</h4>
+                    <p>Weekend favorites</p>
+                </div>
+                <div class="offering-item">
+                    <h4>🥗 Lunch</h4>
+                    <p>Light & satisfying</p>
+                </div>
+                <div class="offering-item">
+                    <h4>🍰 Dessert</h4>
+                    <p>Sweet endings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section" id="info">
+        <h2 class="section-title">Everything You Need to Know</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>🛎️ Service</h3>
+                <ul>
+                    <li>Takeaway</li>
+                    <li>Dine-in</li>
+                    <li>Table service</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>🌟 Amenities</h3>
+                <ul>
+                    <li>Clean restrooms</li>
+                    <li>Cosy seating</li>
+                    <li>Plenty of parking</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>👥 Perfect For</h3>
+                <ul>
+                    <li>Groups & gatherings</li>
+                    <li>Tourists</li>
+                    <li>Families & kids</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atmosphere Section -->
+    <section class="atmosphere">
+        <h2 class="section-title">The Vibe</h2>
+        <p style="text-align: center; color: #666; max-width: 600px; margin: 0 auto;">
+            Step into a space that's casual yet refined, cosy and quiet—perfect for conversation, work, or simply enjoying the moment.
+        </p>
+        <div class="atmosphere-tags">
+            <div class="tag">Casual</div>
+            <div class="tag">Cosy</div>
+            <div class="tag">Quiet</div>
+            <div class="tag">Trendy</div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <h2 class="section-title" style="margin-bottom: 2rem;">Visit Us in Oran</h2>
+        <div class="location-content">
+            <div class="location-info">
+                <h3>Find Us Here</h3>
+                <p><strong>Caramelia Pastry</strong></p>
+                <p>Oran, Algeria</p>
+                <p>☎️ Contact us for hours & reservations</p>
+                <p style="margin-top: 1.5rem; color: var(--caramel); font-weight: 600;">Open for breakfast, brunch, lunch, and dessert</p>
+            </div>
+            <div class="location-map">
+                📍 Map will appear here
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Caramelia Pastry. All rights reserved.</p>
+        <p>Where great coffee meets great pastries.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

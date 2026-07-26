@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Caramelia Pastry | Artisan Coffee &amp; Pastries Oran</title>
+<meta content="Experience artisan coffee and handcrafted pastries in the heart of Oran. Caramelia Pastry offers a refined, cosy atmosphere for coffee lovers and foodies." name="description"/>
+<!-- Google Fonts: Noto Serif for Headlines, Inter for Body -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#fbf9f8",
+                    "inverse-primary": "#ffb688",
+                    "secondary-fixed": "#d7e7d1",
+                    "primary-fixed-dim": "#ffb688",
+                    "on-primary-fixed": "#311300",
+                    "on-surface": "#1b1c1c",
+                    "tertiary-fixed-dim": "#efbd8a",
+                    "on-secondary-fixed": "#121f11",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#ffdbc7",
+                    "on-tertiary-fixed-variant": "#614018",
+                    "primary-container": "#a76436",
+                    "tertiary-fixed": "#ffdcbc",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#bbcbb5",
+                    "outline": "#857369",
+                    "on-primary-fixed-variant": "#6f380d",
+                    "surface-variant": "#e4e2e1",
+                    "on-tertiary-container": "#fffbff",
+                    "cream-surface": "#F5F1E8",
+                    "on-secondary-container": "#586755",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#2c1700",
+                    "surface-container-low": "#f5f3f2",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#fffbff",
+                    "paper-white": "#F9F7F3",
+                    "tertiary-container": "#956d40",
+                    "inverse-surface": "#303030",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#53443b",
+                    "surface-bright": "#fbf9f8",
+                    "secondary-container": "#d4e4ce",
+                    "surface-container": "#f0eded",
+                    "surface-container-highest": "#e4e2e1",
+                    "primary": "#894c20",
+                    "on-secondary-fixed-variant": "#3c4a3a",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-background": "#1b1c1c",
+                    "error-container": "#ffdad6",
+                    "secondary": "#546251",
+                    "surface-tint": "#8c4f23",
+                    "outline-variant": "#d8c2b7",
+                    "on-error": "#ffffff",
+                    "tertiary": "#79542b",
+                    "caramel-deep": "#B8683D",
+                    "surface-container-high": "#eae8e7",
+                    "background": "#fbf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "section-h-desktop": "3rem",
+                    "section-h-mobile": "1.5rem",
+                    "section-v-mobile": "2rem",
+                    "stack-md": "1rem",
+                    "section-v-desktop": "4rem",
+                    "stack-sm": "0.5rem",
+                    "gutter": "2rem",
+                    "stack-lg": "1.5rem"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Noto Serif"],
+                    "headline-xl-mobile": ["Noto Serif"],
+                    "body-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Noto Serif"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Noto Serif"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["56px", {"lineHeight": "1.1", "letterSpacing": "-1px", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-md": ["15px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.5px", "fontWeight": "700"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["19px", {"lineHeight": "1.6", "fontWeight": "300"}],
+                    "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-sm": ["13px", {"lineHeight": "1", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Custom scrollbar for refined aesthetic */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fbf9f8; }
+        ::-webkit-scrollbar-thumb { background: #d8c2b7; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #894c20; }
+
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Bento Grid Specifics */
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-item:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm fixed top-0 w-full z-50">
+<nav class="flex justify-between items-center px-8 h-20 max-w-container-max mx-auto w-full">
+<div class="font-headline-md text-headline-md font-bold text-caramel-deep dark:text-primary-fixed-dim">
+                Caramelia Pastry
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-medium hover:text-caramel-deep transition-colors duration-300 font-label-md text-label-md" href="#why-us">Why Us</a>
+<a class="text-on-surface-variant font-medium hover:text-caramel-deep transition-colors duration-300 font-label-md text-label-md" href="#menu">Menu</a>
+<a class="text-on-surface-variant font-medium hover:text-caramel-deep transition-colors duration-300 font-label-md text-label-md" href="#details">Details</a>
+<a class="text-on-surface-variant font-medium hover:text-caramel-deep transition-colors duration-300 font-label-md text-label-md" href="#location">Location</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:translate-y-[-2px] transition-all shadow-sm active:scale-95">
+                    Order Now
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
+<img class="w-full h-full object-cover" data-alt="A cinematic, shallow depth-of-field shot of a steaming cup of artisan latte with intricate heart-shaped latte art, resting on a rustic wooden table next to a flaky, golden-brown croissant. The lighting is warm and golden, coming from a nearby window, creating a soft morning glow. The background shows a hint of a modern pâtisserie interior with muted cream and caramel tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXHpDD0TOvQ462MDk5EUkRmNKotcSyIK3KdYSz-37rPS39UIoKMFcnGQGkIcTZ4QR0HkabXnYkeXHd5MLUy4nW4m3GwM4TfNJlZ_ecLpgjtESegmdOs8bZ0BEv2zKf6xopClrgCAlzRYCgV1ZZ1pjZmVCSwpgWM4oWHhYDLEUTr2jWtSCLFQJyEBpMxmOELiGckBrTlTn8NWaVuLzVRgocpZLcwJefDwLXKpuoklYbVmos9QfDlmvxG0WhjM6RMtGcW5U8w1q-4rc"/>
+</div>
+</div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-2xl space-y-stack-lg">
+<span class="text-caramel-deep font-label-md text-label-md tracking-widest uppercase">Est. 1998 • Oran</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface leading-tight">
+                        Caramelia Pastry
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Artisan coffee &amp; pastries in the heart of Oran. Experience the perfect blend of traditional craftsmanship and contemporary refinement.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md flex items-center gap-2 hover:bg-caramel-deep transition-all shadow-lg hover:-translate-y-1" href="#location">
+                            Find Us
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="border border-outline text-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-primary-fixed transition-all" href="#menu">
+                            Explore Menu
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Highlights (Why Us) -->
+<section class="py-section-v-desktop bg-cream-surface" id="why-us">
+<div class="max-w-container-max mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">What Makes Us Special</h2>
+<div class="h-1 w-20 bg-caramel-deep mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Great Coffee -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border-t-4 border-primary hover:shadow-md transition-all group">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-icon="coffee">coffee</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Great Coffee</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Expertly sourced beans roasted to perfection, delivering a rich and nuanced flavor profile in every cup.
+                        </p>
+</div>
+<!-- Great Dessert -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border-t-4 border-primary hover:shadow-md transition-all group">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Great Dessert</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Freshly baked pastries and signature treats handcrafted daily by our master pâtissiers.
+                        </p>
+</div>
+<!-- Tea Selection -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border-t-4 border-primary hover:shadow-md transition-all group">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-icon="local_tea_shop">qr_code_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Tea Selection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            A curated collection of premium loose-leaf teas from across the globe for a serene experience.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Bento Grid (What We Serve) -->
+<section class="py-section-v-desktop" id="menu">
+<div class="max-w-container-max mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">What We Serve</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Delight in our curated selection of flavors.</p>
+</div>
+<button class="text-primary font-label-md text-label-md border-b border-primary pb-1 hover:text-caramel-deep hover:border-caramel-deep transition-all">
+                        View Full Menu
+                    </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[600px]">
+<!-- Large Feature: Pastries -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl bg-surface-container bento-item">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all z-10"></div>
+<div class="absolute inset-0" data-alt="A top-down artistic arrangement of various French pastries, including colorful macarons, a layered mille-feuille, and fruit-topped tarts. The aesthetic is bright and high-fashion, with clean lines and soft caramel shadows against a cream-colored backdrop. The textures of the pastry layers are crisp and detailed." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnLucYlAv-zAoE_-uhdAD4rNtjXu0AtHhu4jo_EWlrbrcKGQ7AlVmT9SmlBlxOVN9TvRU-BGudj0c8mzvdgA4VGGNSURWLFH0xD-q31IL1G8RXnWsH_PS2fyxwZdqWiDv0kTgTSRyGHh5AI_CeiaFwX7bby9_MtTitLq8b6-MXFi5BjahuuNV41cvLw7WoCcR6n6eBrAn20hZaQYCXH8MEt4bxjT5AbmH1vpLHoMzW9Jha9yG5L2Tufn-d2IaKs1uKe6kfqXFHxZY')"></div>
+<div class="absolute bottom-0 left-0 p-8 z-20 text-white">
+<h4 class="font-headline-md text-headline-md mb-2">Signature Pastries</h4>
+<p class="font-body-sm text-body-sm opacity-90">Handcrafted daily with premium French butter.</p>
+</div>
+</div>
+<!-- Coffee -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container bento-item">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all z-10"></div>
+<div class="absolute inset-0" data-alt="Close-up of a professional espresso machine portafilter dispensing a thick, syrupy stream of dark espresso with golden crema into a small ceramic cup. The steam is visible, and the scene captures the intense, focused atmosphere of a specialty coffee shop in light-mode tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlgaKIJS1w_ePfem4zSsJx_quYqhZs4GocLgSc5GSJJuVkbsuJjTTj4mX1-WvXZW3Ng6C-LXGM3UGhhhxSm4qXhhm_R6VfGLEKOxosE9aqvdwqhgTtbb91AvdamD5YuR-nO3bRP3B70L6dL5VWY-hXR-U_37hN_HVBuvGWCwC3AVewWNkTkdM9SX9sIWmzisUswq81P_gYSPL4_WM_ousKOPiZ1P8Lq4cqmH8LBIRbUIA32kCUd7oVjNcbKC4pGh7GDzTVRgv1xsU')"></div>
+<div class="absolute bottom-0 left-0 p-6 z-20 text-white">
+<h4 class="font-headline-sm text-headline-sm">Coffee</h4>
+</div>
+</div>
+<!-- Breakfast -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container bento-item">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all z-10"></div>
+<div class="absolute inset-0" data-alt="A modern breakfast plate featuring avocado toast with a perfectly poached egg, red pepper flakes, and microgreens on a white artisanal ceramic plate. The scene is bright and airy, reflecting a trendy morning café vibe." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBb79gY0dlVup9eixIEnH-KsHgtBwJpXzN1G7ngR8_-2F4SZ0yAjD1P-VP8Gtxr44mTlLzLEMiEpCkzQrmSjF1TIaCwntix1x34etv_3XSoaQ8QDc5niSbyMsnyfXhAsiCOi-xUYP0sXXUS-jjFPyOH1i7gGzuRpkk7hFdAuKaRi53MPxtZPNYthAvNW0URpUed53BBYvYaXwqzJzDsH48pXm3sF_vNygu65Mrae_GXts3hn5NZaoeMhlKDQSrepF8SJwk8OeEyPrI')"></div>
+<div class="absolute bottom-0 left-0 p-6 z-20 text-white">
+<h4 class="font-headline-sm text-headline-sm">Breakfast</h4>
+</div>
+</div>
+<!-- Brunch -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container bento-item">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all z-10"></div>
+<div class="absolute inset-0" data-alt="A festive brunch table setting with multiple plates including pancakes with maple syrup, a fresh fruit bowl, and a sparkling juice in a crystal glass. The mood is social and vibrant, with soft daylight and warm interior textures." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCg4peE6DewZ4oiOXpWwtqjfZ-He4c_cnTYR4RhIfPI51C-6f68dyL5HzsPPZ1kbkxV1L-Rat57sEqDuqARdk1KONGAl9hpugw432ZPyFEv3oPynG1QCpSbFs28RczPuTvom_f6ip4_fJNMCLRiD_N4Rt5GYymkyimznTvNa9Q39hpFdL3ezIUQMGdmS1EJ-imb-T4x6Yiv6tIKoY0INPwk_47LYAXi7W2rycVUmwZFckKT3A68JWunI4Au5ee-0nR99Nv6-BWGAFQ')"></div>
+<div class="absolute bottom-0 left-0 p-6 z-20 text-white">
+<h4 class="font-headline-sm text-headline-sm">Brunch</h4>
+</div>
+</div>
+<!-- Lunch & Dessert Split -->
+<div class="relative group overflow-hidden rounded-xl bg-surface-container bento-item">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all z-10"></div>
+<div class="absolute inset-0" data-alt="A light lunch option: a crisp Mediterranean salad with feta cheese and olives, served alongside a toasted baguette. The colors are fresh and vibrant, emphasizing a healthy, refined dining experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvCnIYOpD0IP4WkvD5MYwgF1BgN72LhJ4VXvEA7zfbEMhk3v_3yXsZb840tLAN3qOOzD8taOhSYTEdA1AwzA1bElOI4qTsyybGWr2JSfGlZujFBe24aBi5SKYJC34wnh0_-nxcA8SXwhdEyrS2h2MGGa0jC8c17RAH_LuAH79H8RQR37Sm7YKFIMxyO3yC7vBkQZ25uKJ5YUOsAPQmON9n6vrjGsRycNw-n4ubXPK3mr0f_PiJL30mCgmuuDvs8l5cmz272OUqA4U')"></div>
+<div class="absolute bottom-0 left-0 p-6 z-20 text-white">
+<h4 class="font-headline-sm text-headline-sm">Lunch</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Info Section (Everything You Need to Know) -->
+<section class="py-section-v-desktop bg-surface-container-low" id="details">
+<div class="max-w-container-max mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Everything You Need to Know</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service -->
+<div class="space-y-6 bg-white p-10 rounded-lg shadow-sm border border-outline-variant">
+<div class="flex items-center gap-3 text-caramel-deep border-b-2 border-secondary-fixed pb-4">
+<span class="material-symbols-outlined">concierge</span>
+<h3 class="font-headline-sm text-headline-sm">Service</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Takeaway
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Dine-in
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Table service
+                            </li>
+</ul>
+</div>
+<!-- Amenities -->
+<div class="space-y-6 bg-white p-10 rounded-lg shadow-sm border border-outline-variant">
+<div class="flex items-center gap-3 text-caramel-deep border-b-2 border-secondary-fixed pb-4">
+<span class="material-symbols-outlined">deck</span>
+<h3 class="font-headline-sm text-headline-sm">Amenities</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Clean restrooms
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Cosy seating
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Plenty of parking
+                            </li>
+</ul>
+</div>
+<!-- Perfect For -->
+<div class="space-y-6 bg-white p-10 rounded-lg shadow-sm border border-outline-variant">
+<div class="flex items-center gap-3 text-caramel-deep border-b-2 border-secondary-fixed pb-4">
+<span class="material-symbols-outlined">groups</span>
+<h3 class="font-headline-sm text-headline-sm">Perfect For</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Groups &amp; gatherings
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Tourists
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Families &amp; kids
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Atmosphere Section (The Vibe) -->
+<section class="py-section-v-desktop overflow-hidden bg-surface relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="max-w-3xl mx-auto px-8 text-center relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">The Vibe</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 italic">
+                    "Step into a space that's casual yet refined, cosy and quiet—perfect for conversation, work, or simply enjoying the moment."
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<span class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md">Casual</span>
+<span class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md">Cosy</span>
+<span class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md">Quiet</span>
+<span class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md">Trendy</span>
+</div>
+</div>
+</section>
+<!-- Location Section (Visit Us in Oran) -->
+<section class="py-section-v-desktop bg-cream-surface" id="location">
+<div class="max-w-container-max mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Visit Us in Oran</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-caramel-deep mt-1">location_on</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Caramelia Pastry</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Central District, Oran, Algeria</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-caramel-deep mt-1">phone</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface-variant">Contact us for hours &amp; reservations</p>
+</div>
+</div>
+<div class="pt-6">
+<p class="text-caramel-deep font-bold font-body-md text-body-md">Open for breakfast, brunch, lunch, and dessert.</p>
+<p class="text-on-surface-variant font-body-sm text-body-sm mt-2">Mon - Sun: 08:00 AM - 10:00 PM</p>
+</div>
+</div>
+</div>
+<div class="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl border-4 border-white group">
+<div class="absolute inset-0 bg-surface-dim flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A stylized, artistic map placeholder showing the coastal city of Oran, Algeria. The map uses a minimalist palette of cream, sage, and caramel, highlighting the central district with a prominent location pin for Caramelia Pastry. The aesthetic is elegant and fits the artisan brand identity." data-location="Oran, Algeria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArcqMwlFo6QpgUSV5yKlky41kxfuSdAEOzzLRfC1jdLW0DjAQgB8p4_aADGSzwf1WtFuwClMF9fsaj_mKgpkIeAxFVP6xUSr7uRuwuXc-SQ8xNXCYuUeOKZ_YULKqHHLRZh3Y7Rht44RBY_vE9_UOXmQg7b0R0tG8lmDC2DwksDZztXnSoergXooIjFjzR4yN50DOdZJOZaoApEktuzuxH9uhdYCCsPajBRH1RhHOLEldVKhqAwTFtwdwPtz2nwbZYFyOsegz5I5U"/>
+</div>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all pointer-events-none"></div>
+<div class="absolute top-4 left-4 bg-white px-4 py-2 rounded shadow-md z-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-caramel-deep text-sm">stars</span>
+<span class="font-label-sm text-label-sm">4.9 Star Destination</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-surface-container-highest">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-container-max mx-auto w-full">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<div class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed-dim mb-2">
+                    Caramelia Pastry
+                </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+                    © 2024 Caramelia Pastry Oran. Artisan Quality Since 1998.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-6">
+<a class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">person</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for bento grid items
+        document.querySelectorAll('.bento-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const overlay = item.querySelector('.absolute.inset-0.bg-black\\/40');
+                if (overlay) overlay.style.backgroundColor = 'rgba(0,0,0,0.2)';
+            });
+            item.addEventListener('mouseleave', () => {
+                const overlay = item.querySelector('.absolute.inset-0.bg-black\\/40');
+                if (overlay) overlay.style.backgroundColor = 'rgba(0,0,0,0.4)';
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'ease-out');
+        });
+    </script>
+</body></html>
